@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.sun{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 94, 0);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 170px;
+    left: 550px;
+    box-shadow: 0px 0px 350px rgb(255, 94, 0);
+   animation: sun 15s linear 0s infinite;
+   animation-direction: alternate;
+}
+@keyframes sun{
+    0%{
+        box-shadow: 0px 0px 350px rgb(255, 94, 0);
+    }
+    25%{
+        box-shadow: 5px 5px 250px rgb(255, 94, 0);
+    }
+    50%{
+        box-shadow: 0px 0px 150px rgb(255, 94, 0)
+    }
+    75%{
+        box-shadow: -5px -5px 100px rgb(255, 94, 0);
+    }
+    100%{
+        box-shadow: 0px 0px 50px rgb(255, 94, 0);
+    }
+}
+.moon{
+    width: 380px;
+    height: 390px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0) ;
+    animation: moon 15s linear 0s infinite;
+    animation-direction: alternate;
+}
+@keyframes moon{
+    0%{
+        top: -80%;
+        left: -80%;
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+
+    }
+}

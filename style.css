@@ -5,6 +5,10 @@
 }
 body{
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 .sun{
     width: 400px;
@@ -14,9 +18,7 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    top: 170px;
-    left: 550px;
+    align-items: center;;
     box-shadow: 0px 0px 350px rgb(255, 94, 0);
    animation: sun 15s linear 0s infinite;
    animation-direction: alternate;
@@ -57,5 +59,13 @@ body{
         top: 0%;
         left: 0%;
 
+    }
+}
+@media (max-width:500px) {
+    .moon{
+        scale: 0.9;
+    }
+    .sun{
+        scale: 0.7;
     }
 }
